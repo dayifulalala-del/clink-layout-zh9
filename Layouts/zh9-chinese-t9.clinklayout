@@ -1,10 +1,9 @@
 {
-  "id": "zh9-chinese-t9",
+  "id": "custom-zh9-chinese-t9",
   "name": "中文九键 Chinese T9",
   "rows": [
-    ["1", "2", "3"],
-    ["4", "5", "6"],
-    ["7", "8", "9"],
-    ["globe", "0", "backspace"]
+    ["abc", "def", "ghi"],
+    ["jkl", "mno", "pqrs"],
+    ["tuv", "wxyz"]
   ]
 }
