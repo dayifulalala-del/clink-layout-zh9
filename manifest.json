@@ -1,0 +1,18 @@
+{
+  "version": "latest",
+  "panels": [
+    {
+      "id": "zh9-t9-pinyin",
+      "name": "\u4e2d\u6587\u4e5d\u952e T9",
+      "icon": "keyboard",
+      "summary": "\u4f20\u7edf\u4e5d\u5bab\u683c\u62fc\u97f3\u8f93\u5165\uff0c\u5e26\u5019\u9009\u8bcd\u4e0e\u97f3\u8282\u6d88\u6b67",
+      "version": "latest",
+      "asset": {
+        "path": "zh9-t9-pinyin.clinkpanel",
+        "url": "https://github.com/dayifulalala-del/clink-layout-zh9/releases/download/latest/zh9-t9-pinyin.clinkpanel",
+        "sha256": "d6878e3c914e0e3171842d29ad2b7877122c24f87a54adabd6170aa884c3a5b7",
+        "byteCount": 234130
+      }
+    }
+  ]
+}
