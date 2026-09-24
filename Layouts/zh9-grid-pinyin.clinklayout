@@ -1,0 +1,11 @@
+{
+  "id": "zh9-grid-pinyin",
+  "name": "拼音方格（测试）Grid Pinyin test",
+  "rows": [
+    ["a", "b", "c", "d", "e", "f"],
+    ["g", "h", "i", "j", "k", "l"],
+    ["m", "n", "o", "p", "q", "r"],
+    ["s", "t", "u", "v", "w", "x"],
+    ["globe", "y", "z", "'", "backspace"]
+  ]
+}
