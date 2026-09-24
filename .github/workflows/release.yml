@@ -1,8 +1,10 @@
-name: Release panels
+name: Panels
 
 on:
   push:
     branches: [main]
+    paths: ["Panels/**", "tools/**", ".github/workflows/release.yml"]
+  pull_request:
     paths: ["Panels/**", "tools/**", ".github/workflows/release.yml"]
   workflow_dispatch:
 
@@ -10,12 +12,23 @@ permissions:
   contents: write
 
 jobs:
-  release:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Validate panel logic
         run: python3 tools/test-panel.py
+      - name: Check manifest is current
+        run: |
+          python3 tools/build-manifest.py
+          git diff --exit-code manifest.json
+
+  release:
+    needs: test
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - name: Build manifest
         run: python3 tools/build-manifest.py
       - name: Replace latest release
